@@ -1,0 +1,7 @@
+.container {
+    @apply bg-yellow-300 flex flex-auto items-center justify-center;
+
+    & > .block {
+        @apply shadow-md p-5 bg-black text-center text-white text-lg;
+    }
+}
