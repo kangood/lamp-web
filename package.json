@@ -10,10 +10,6 @@
         "lint:es": "next lint --fix",
         "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/"
     },
-    "files": [
-        "eslint-base.js",
-        "eslint-base-ts.js"
-    ],
     "dependencies": {
         "@radix-ui/react-slot": "^1.0.2",
         "@types/node": "20.4.9",
