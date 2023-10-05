@@ -1,5 +1,5 @@
 .container {
-    color: black;
+    color: var(--primary-color);
 
     .intro {
         /* 弹性布局  */
@@ -10,7 +10,7 @@
         justify-content: center;
         width: 100%;
         height: 35.625rem;
-        color: white;
+        color: var(--primary-color);
 
         .textGroup {
             width: 29.625rem;
@@ -24,7 +24,7 @@
                 margin-top: 2.5rem;
                 font-size: 1.125rem;
                 line-height: 2rem;
-                color: black;
+                color: var(--primary-color);
                 /* animation:  */
             }
         }
@@ -65,7 +65,7 @@
             .p {
                 font-size: 1rem;
                 line-height: 1.5rem;
-                color: black;
+                color: var(--primary-color);
             }
         }
     }

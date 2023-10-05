@@ -2,11 +2,19 @@ import type { NextPage } from 'next';
 
 import Image from 'next/image';
 
+import { useContext, useEffect } from 'react';
+
+import { ThemeContext } from '@/stores/theme';
+
 import styles from './index.module.css';
 
 interface IProps {}
 
 const Home: NextPage<IProps> = () => {
+    const { theme } = useContext(ThemeContext);
+    useEffect(() => {
+        console.log(123);
+    }, [theme]);
     return (
         <>
             <div className={styles.container}>

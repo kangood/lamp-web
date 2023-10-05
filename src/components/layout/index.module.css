@@ -1,13 +1,12 @@
 .divide {
     width: 100%;
     height: 4rem;
-    background-color: white;
 }
 
 .layout {
-    background-color: black;
+    background-color: var(--primary-background-color);
 
     .main {
-        background-color: white;
+        /* background-color: var(--primary-background-color); */
     }
 }
