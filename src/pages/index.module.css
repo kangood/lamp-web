@@ -1,0 +1,102 @@
+.container {
+    color: black;
+
+    .intro {
+        /* 弹性布局  */
+        display: flex;
+        /* 交叉轴（y轴）居中对齐 */
+        align-items: center;
+        /* 主轴（x轴）居中对齐 */
+        justify-content: center;
+        width: 100%;
+        height: 35.625rem;
+        color: white;
+
+        .textGroup {
+            width: 29.625rem;
+
+            .title {
+                /* animation:  */
+            }
+
+            .text {
+                /* 顶部外边距 */
+                margin-top: 2.5rem;
+                font-size: 1.125rem;
+                line-height: 2rem;
+                color: black;
+                /* animation:  */
+            }
+        }
+
+        .bodyIcon {
+            /* animation:  */
+            width: 38.9375rem;
+            height: 34.625rem;
+            background-image: var(--home-body-icon-clear-webp);
+            /* 背景图像不会重复，覆盖默认的四方位重复 */
+            background-repeat: no-repeat;
+            /* 设置背景图像的起始位置 */
+            background-position: 50%;
+            background-size: 38.9375rem 34.625rem;
+        }
+    }
+
+    .hierarchy {
+        display: flex;
+        /* 让弹性盒元素在必要的时候拆行 */
+        flex-flow: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .yGroup {
+            /* animation */
+            display: flex;
+            /* 列，垂直显示 */
+            flex-direction: column;
+            align-items: center;
+            width: 12.5rem;
+            margin-bottom: 2.375rem;
+
+            .img {
+                margin-bottom: 1rem;
+            }
+
+            .p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: black;
+            }
+        }
+    }
+
+    .technologyDirection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* 北向第一顺位，顺时针轮流，空缺由对向补齐 */
+        padding: 5rem 10rem 6.25rem;
+
+        .prospect {
+            display: flex;
+            align-items: center;
+            /* 由首尾两边往中间排列 */
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 6.25rem;
+
+            .headGroup {
+                display: flex;
+                flex-direction: column;
+
+                .divide {
+                    width: 20.5rem;
+                    height: 0.0625rem;
+                    margin: 0.5rem 0;
+                    background: #26fec2;
+                }
+            }
+        }
+    }
+}

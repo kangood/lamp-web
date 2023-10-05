@@ -1,0 +1,56 @@
+html {
+    --navbar-icon: url('../../public/logo-white.png');
+    --home-theme-icon: url('../../public/theme_light.png');
+    --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.webp');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+h1 {
+    margin: 0 0 0.625rem;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.875rem;
+    color: black;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    /* 标准字体样式，默认值 */
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.125rem;
+    /* 字符间距 */
+    letter-spacing: 0.0125rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -18,6 +18,7 @@ module.exports = {
         'declaration-block-no-redundant-longhand-properties': true, // 禁止使用可以缩写却不缩写的属性
         'shorthand-property-no-redundant-values': true, // 禁止在简写属性中使用冗余值
         'color-hex-length': 'short', // 指定十六进制颜色是否使用缩写
+        'color-function-notation': 'legacy', // 指定颜色函数的表示为传统符号
         'comment-no-empty': true, // 禁止空注释
         'font-family-name-quotes': 'always-unless-keyword', // 指定字体名称是否需要使用引号引起来 | 期待每一个不是关键字的字体名都使用引号引起来
         // 'font-weight-notation': 'numeric', // 要求使用数字或命名的 (可能的情况下) font-weight 值
@@ -72,8 +73,8 @@ module.exports = {
             },
         ],
         'comment-empty-line-before': [
-            // 要求或禁止在注释之前有空行
-            'always',
+            // 要求或禁止在注释之前有空行（改always为never）
+            'never',
             {
                 except: ['first-nested'],
                 ignore: ['stylelint-commands'],

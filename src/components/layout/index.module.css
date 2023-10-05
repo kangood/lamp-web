@@ -1,0 +1,13 @@
+.divide {
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+}
+
+.layout {
+    background-color: black;
+
+    .main {
+        background-color: white;
+    }
+}
