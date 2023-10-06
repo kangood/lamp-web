@@ -1,3 +1,58 @@
 .footer {
-    @apply bg-slate-600 text-left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 3rem 1.6875rem 10rem;
+    background: var(--footer-background-color);
+
+    .up {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            .div {
+                display: flex;
+                align-items: center;
+                height: 8rem;
+                padding-left: 8rem;
+                margin-bottom: 1.875rem;
+                background-image: var(--footer-icon);
+                background-repeat: no-repeat;
+                background-position: 0%;
+                background-size: 8rem;
+
+                .h2 {
+                    font-size: 2.25rem;
+                    font-weight: 500;
+                    line-height: 2.25rem;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+
+            .singleGroup {
+                display: flex;
+                flex-direction: column;
+                margin-right: 10.1875rem;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+
+                .div {
+                    margin-bottom: 2.5rem;
+                    font-weight: 500;
+                }
+
+                .a {
+                    margin-bottom: 1.5rem;
+                    opacity: 0.5;
+                }
+
+                .opacity {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }

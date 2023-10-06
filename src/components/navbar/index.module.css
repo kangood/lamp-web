@@ -5,16 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* 有这个会超出屏幕 width: 100%; */
+    /* width: 100%; 有这个会超出屏幕 */
     height: 4rem;
     padding: 0 2rem 0 1.3125rem;
     background: var(--navbar-background-color);
-    /* 未知效果 backdrop-filter: blur(0.625rem); */
+    /* 元素后面区域添加图形效果，毛玻璃效果 */
+    backdrop-filter: blur(0.625rem);
 
     .link {
         display: flex;
         align-items: center;
-        text-decoration: none;
 
         .logoImg {
             width: 4rem;

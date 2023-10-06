@@ -3,23 +3,41 @@ html[data-theme='light'] {
     --primary-background-color: rgba(255, 255, 255, 100%); /* 主要的背景色 */
     --footer-background-color: #f4f5f5; /* footer组件的背景色 */
     --navbar-background-color: rgba(255, 255, 255, 50%); /* navbar组件的背景色 */
-    --secondary-color: #666; /* 次一级，色值没那么显眼的字体颜色 */
+    --secondary-color: #666666; /* 次一级，色值没那么显眼的字体颜色 */
+    --secondary-color-2: #f9f9f9;
+    --secondary-color-10: #03e4ae;
+    --secondary-color-11: #f4f5f5;
+    --secondary-color-12: #ffffff;
     --link-color: #0070f3; /* 链接 hover 上去的颜色 */
+    --button-color-2: #04e4ae; /* 按钮颜色 */
     --navbar-icon: url('../../public/logo_light.png');
+    --footer-icon: url('../../public/logo_light_lucency.png');
     --home-theme-icon: url('../../public/theme_light.png');
     --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.webp');
+    --module-background: url('../../public/module_background_light.png');
+    --arrow-right: url('../../public/arrow_right_light.png');
+    --home-team-icon: url('../../public/team_icon_light.png');
 }
 
 html[data-theme='dark'] {
     --primary-color: #ffffff;
     --primary-background-color: rgba(14, 14, 14, 100%);
-    --footer-background-color: rgba(36, 36, 36, 100%);
+    --footer-background-color: #242424;
     --navbar-background-color: rgba(0, 0, 0, 50%);
     --secondary-color: rgba(255, 255, 255, 50%);
+    --secondary-color-2: #171717;
+    --secondary-color-10: #01ffc3;
+    --secondary-color-11: #171717;
+    --secondary-color-12: #1c1c1c;
     --link-color: #34a8eb;
-    --navbar-icon: url('../../public/logo_milk_coffee.png');
-    --home-theme-icon: url('../../public/theme_light.png');
+    --button-color-2: #01ffc3;
+    --navbar-icon: url('../../public/logo_dark.png');
+    --footer-icon: url('../../public/logo_dark_lucency.png');
+    --home-theme-icon: url('../../public/theme_dark.png');
     --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.webp');
+    --module-background: url('../../public/module_background_dark.png');
+    --arrow-right: url('../../public/arrow_right_dark.png');
+    --home-team-icon: url('../../public/team_icon_dark.png');
 }
 
 body {
@@ -62,11 +80,20 @@ h3 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 p {
     margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 * {

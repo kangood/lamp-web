@@ -4,6 +4,7 @@
 }
 
 .layout {
+    color: var(--primary-color);
     background-color: var(--primary-background-color);
 
     .main {
