@@ -13,10 +13,11 @@ html[data-theme='light'] {
     --navbar-icon: url('../../public/logo_light.png');
     --footer-icon: url('../../public/logo_light_lucency.png');
     --home-theme-icon: url('../../public/theme_light.png');
-    --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.webp');
+    --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.png');
     --module-background: url('../../public/module_background_light.png');
     --arrow-right: url('../../public/arrow_right_light.png');
     --home-team-icon: url('../../public/team_icon_light.png');
+    --home-nextjs_icon: url('../../public/nextjs_logo.png');
 }
 
 html[data-theme='dark'] {
@@ -34,10 +35,11 @@ html[data-theme='dark'] {
     --navbar-icon: url('../../public/logo_dark.png');
     --footer-icon: url('../../public/logo_dark_lucency.png');
     --home-theme-icon: url('../../public/theme_dark.png');
-    --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.webp');
+    --home-body-icon-clear-webp: url('../../public/body_icon_clear_dark.png');
     --module-background: url('../../public/module_background_dark.png');
     --arrow-right: url('../../public/arrow_right_dark.png');
     --home-team-icon: url('../../public/team_icon_dark.png');
+    --home-nextjs_icon: url('../../public/nextjs_logo.png');
 }
 
 body {

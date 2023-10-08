@@ -25,26 +25,47 @@ export const Footer: FC<IFooterProps> = () => {
                         <div className={styles.div}>了解更多</div>
                         <a
                             className={clsx(styles.a, styles.opacity)}
-                            href="https://juejin.cn/team/6995012409286983680/posts"
+                            href="https://panlore.top"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            掘金
+                            博客
                         </a>
                     </div>
                     <div className={styles.singleGroup}>
                         <div className={styles.div}>产品</div>
-                        <a className={styles.a}>Eden</a>
                         <a
                             className={clsx(styles.a, styles.opacity)}
-                            href="https://semi.design/zh-CN"
+                            href="https://nextjs.org"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            Semi
+                            Next.JS
                         </a>
-                        <a className={styles.a}>MIS</a>
-                        <a className={styles.a}>魔方</a>
+                        <a
+                            className={clsx(styles.a, styles.opacity)}
+                            href="https://ant.design"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            Ant Design
+                        </a>
+                        <a
+                            className={clsx(styles.a, styles.opacity)}
+                            href="https://nestjs.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            NestJS
+                        </a>
+                        <a
+                            className={clsx(styles.a, styles.opacity)}
+                            href="https://tailwindcss.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            Tailwind CSS
+                        </a>
                         <a className={styles.a}>跨端解决方案</a>
                     </div>
                     <div className={styles.singleGroup}>

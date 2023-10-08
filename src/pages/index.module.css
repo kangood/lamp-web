@@ -70,7 +70,7 @@
         }
     }
 
-    .technologyDirection {
+    .feature {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +118,7 @@
             }
         }
 
-        .directionContent {
+        .featureContent {
             display: flex;
             flex-flow: wrap;
             justify-content: center;
@@ -261,7 +261,7 @@
             justify-content: center;
             width: 100%;
 
-            .labelBasic {
+            .labelBasicA {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -271,6 +271,56 @@
                 cursor: pointer;
                 background-color: var(--secondary-color-12);
                 border-radius: 0.75rem;
+
+                .nextLogoSpan {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3rem;
+                    height: 3rem;
+                    background-image: var(--home-nextjs_icon);
+                    background-repeat: no-repeat;
+                    background-size: 2.4375rem 2.4375rem;
+                    border: 0.3125rem solid #ecedef;
+                    border-radius: 50%;
+
+                    .nextLogoImg {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                .nextLogoAppend {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 6rem;
+                    height: 3rem;
+                    margin-left: 1rem;
+                    background-image: var(--home-nextjs_text);
+                    background-repeat: no-repeat;
+                    background-size: 5rem 3rem;
+                }
+
+                .logoText {
+                    margin-left: 1rem;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    line-height: 32px;
+                    /* 字符间距，负数间隔更小 */
+                    letter-spacing: -0.18px;
+                }
+
+                .tailwindDiv {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .tailwindSvg {
+                        width: auto;
+                        height: 1.375rem;
+                    }
+                }
             }
 
             .labelPlus {
