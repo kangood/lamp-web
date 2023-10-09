@@ -5,19 +5,25 @@ html[data-theme='light'] {
     --navbar-background-color: rgba(255, 255, 255, 50%); /* navbar组件的背景色 */
     --secondary-color: #666666; /* 次一级，色值没那么显眼的字体颜色 */
     --secondary-color-2: #f9f9f9;
+    --secondary-color-9: #f5f5f5;
     --secondary-color-10: #03e4ae;
     --secondary-color-11: #f4f5f5;
     --secondary-color-12: #ffffff;
+    --secondary-font-color-4: #1c1f23;
     --link-color: #0070f3; /* 链接 hover 上去的颜色 */
     --button-color-2: #04e4ae; /* 按钮颜色 */
-    --navbar-icon: url('../../public/logo_light.png');
-    --footer-icon: url('../../public/logo_light_lucency.png');
-    --home-theme-icon: url('../../public/theme_light.png');
-    --home-body-icon-clear-webp: url('../../public/body_icon_light_clear.png');
-    --module-background: url('../../public/module_background_light.png');
-    --arrow-right: url('../../public/arrow_right_light.png');
-    --home-team-icon: url('../../public/team_icon_light.png');
-    --home-nextjs_icon: url('../../public/nextjs_logo.png');
+    --navbar-icon: url('/logo_light.png');
+    --footer-icon: url('/logo_light_lucency.png');
+    --home-theme-icon: url('/theme_light.png');
+    --home-body-icon-clear-webp: url('/body_icon_light_clear.png');
+    --module-background: url('/module_background_light.png');
+    --arrow-right: url('/arrow_right_light.png');
+    --home-team-icon: url('/team_icon_light.png');
+    --home-nextjs_icon: url('/nextjs_logo.png');
+    --pagination-left-arrow: url('/pagination_left_arrow_light.png');
+    --pagination-right-arrow: url('/pagination_right_arrow_light.png');
+    --join-us-title-background: url('/join_us_title_bg_light.png');
+
 }
 
 html[data-theme='dark'] {
@@ -27,22 +33,28 @@ html[data-theme='dark'] {
     --navbar-background-color: rgba(0, 0, 0, 50%);
     --secondary-color: rgba(255, 255, 255, 50%);
     --secondary-color-2: #171717;
+    --secondary-color-9: #222229;
     --secondary-color-10: #01ffc3;
     --secondary-color-11: #171717;
     --secondary-color-12: #1c1c1c;
+    --secondary-font-color-4: #999;
     --link-color: #34a8eb;
     --button-color-2: #01ffc3;
-    --navbar-icon: url('../../public/logo_dark.png');
-    --footer-icon: url('../../public/logo_dark_lucency.png');
-    --home-theme-icon: url('../../public/theme_dark.png');
-    --home-body-icon-clear-webp: url('../../public/body_icon_clear_dark.png');
-    --module-background: url('../../public/module_background_dark.png');
-    --arrow-right: url('../../public/arrow_right_dark.png');
-    --home-team-icon: url('../../public/team_icon_dark.png');
-    --home-nextjs_icon: url('../../public/nextjs_logo.png');
+    --navbar-icon: url('/logo_dark.png');
+    --footer-icon: url('/logo_dark_lucency.png');
+    --home-theme-icon: url('/theme_dark.png');
+    --home-body-icon-clear-webp: url('/body_icon_clear_dark.png');
+    --module-background: url('/module_background_dark.png');
+    --arrow-right: url('/arrow_right_dark.png');
+    --home-team-icon: url('/team_icon_dark.png');
+    --home-nextjs_icon: url('/nextjs_logo.png');
+    --pagination-left-arrow: url('/pagination_left_arrow_dark.png');
+    --pagination-right-arrow: url('/pagination_right_arrow_dark.png');
+    --join-us-title-background: url('/join_us_title_bg_dark.png');
 }
 
 body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -96,6 +108,13 @@ a {
 
 button {
     cursor: pointer;
+}
+
+li, ul {
+    /* 列表项标记的类型: 无标记 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 * {

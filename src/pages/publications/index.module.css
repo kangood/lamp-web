@@ -1,0 +1,109 @@
+.outer {
+    .up {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 15rem;
+
+        .p {
+            font-size: 1rem;
+            line-height: 1.375rem;
+            color: var(--secondary-color);
+        }
+
+        .leftImg {
+            position: absolute;
+            bottom: 6.125rem;
+            left: 10.3125rem;
+            width: 6.125rem;
+            height: 5.5rem;
+            background-image: url('/publications_up_left.png');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+        }
+
+        .rightImg {
+            position: absolute;
+            right: 9.1875rem;
+            bottom: 2.125rem;
+            width: 6.125rem;
+            height: 5.5rem;
+            background-image: url('/publications_up_right.png');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+        }
+    }
+
+    .middle {
+        width: 70rem;
+        margin: auto;
+
+        .divGroupAppend {
+            height: 17.5rem;
+            padding: 2.5rem 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid var(--secondary-color-7);
+
+            .leftDivAppend {
+                width: 25rem;
+                height: 12.5rem;
+                margin-right: 3.5rem;
+            }
+        }
+    }
+
+    .down {
+        display: flex;
+        justify-content: center;
+        margin: 6rem 0 5rem;
+
+        .ul {
+            display: flex;
+            width: 6rem;
+            height: 2rem;
+            /* 列表项标记的类型: 无标记 */
+            list-style-type: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2rem;
+                height: 2rem;
+                color: var(--secondary-font-color-4);
+                /* 鼠标光标形状: 手指形状 */
+                cursor: pointer;
+                background: inherit;
+            }
+
+            .li1 {
+                /* 鼠标光标形状: 禁止符号 */
+                cursor: not-allowed;
+                background: var(--pagination-left-arrow);
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 2rem 2rem;
+            }
+
+            .li2 {
+                color: var(--primary-color);
+                cursor: not-allowed;
+                background: var(--secondary-color-9);
+                border-radius: 0.1875rem;
+            }
+
+            .li3 {
+                cursor: not-allowed;
+                background: var(--pagination-right-arrow);
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 2rem 2rem;
+            }
+        }
+    }
+}

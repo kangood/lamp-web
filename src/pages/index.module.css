@@ -193,50 +193,6 @@
 
             .a {
                 width: 100%;
-
-                .divGroup {
-                    display: flex;
-                    width: 100%;
-                    max-width: 75rem;
-                    height: 19.5rem;
-                    padding: 1rem;
-                    margin-bottom: 7.5rem;
-                    cursor: pointer;
-
-                    .leftDiv {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 35rem;
-                        height: 17.5rem;
-                        margin-right: 5rem;
-                        overflow: hidden;
-                    }
-
-                    .rightDiv {
-                        display: flex;
-                        flex-direction: column;
-                        max-width: calc(100% - 37rem);
-                        /* 允许在单词内换行 */
-                        word-break: break-all;
-                        /* 在长单词或 URL 地址内部进行换行 */
-                        word-wrap: break-word;
-
-                        .h2 {
-                            margin: 1rem 0 2rem;
-                            font-size: 2rem;
-                            font-weight: 600;
-                            line-height: 3.125rem;
-                            color: var(--primary-color);
-                        }
-
-                        .p {
-                            font-size: 1rem;
-                            line-height: 2rem;
-                            color: var(--secondary-color);
-                        }
-                    }
-                }
             }
         }
     }
@@ -381,4 +337,48 @@
             }
         }
     }
+}
+
+.container_feature_publicationsContent_a_divGroup {
+    display: flex;
+    width: 100%;
+    max-width: 75rem;
+    height: 19.5rem;
+    padding: 1rem;
+    margin-bottom: 7.5rem;
+    cursor: pointer;
+}
+
+.container_feature_publicationsContent_a_divGroup_leftDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35rem;
+    height: 17.5rem;
+    margin-right: 5rem;
+    overflow: hidden;
+}
+
+.container_feature_publicationsContent_a_divGroup_rightDiv {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 37rem);
+    /* 允许在单词内换行 */
+    word-break: break-all;
+    /* 在长单词或 URL 地址内部进行换行 */
+    word-wrap: break-word;
+}
+
+.container_feature_publicationsContent_a_divGroup_rightDiv_h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.125rem;
+    color: var(--primary-color);
+}
+
+.container_feature_publicationsContent_a_divGroup_rightDiv_p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--secondary-color);
 }

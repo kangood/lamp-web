@@ -1,0 +1,26 @@
+.up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 24.9375rem;
+    background-image: var(--join-us-title-background);
+    background-repeat: no-repeat;
+    background-position: center 12.625rem;
+    background-size: 70rem 10.5625rem;
+
+    .h1 {
+        margin-bottom: 2.875rem;
+        font-size: 4rem;
+        line-height: 4.8125rem;
+    }
+
+    .p {
+        width: 20.25rem;
+        font-size: 1.125rem;
+        line-height: 2.125rem;
+        color: var(--primary-color);
+        text-align: center;
+    }
+}

@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 
 import Image from 'next/image';
 
-import { useContext } from 'react';
-
 import clsx from 'clsx';
 
 import * as AntDesignLogoSVG from 'public/ant_design_logo.svg';
@@ -12,8 +10,6 @@ import * as NestJSLogoSVG from 'public/nestjs_logo.svg';
 
 import PublicationsProspectPNG from 'public/publications_prospect.png';
 
-import { ThemeContext } from '@/stores/theme';
-
 import { montserrat } from '@/lib/utils';
 
 import styles from './index.module.css';
@@ -21,7 +17,6 @@ import styles from './index.module.css';
 interface IProps {}
 
 const Home: NextPage<IProps> = () => {
-    const { theme } = useContext(ThemeContext);
     return (
         <>
             <div className={styles.container}>
@@ -273,8 +268,14 @@ const Home: NextPage<IProps> = () => {
                     </div>
                     <div className={styles.publicationsContent}>
                         <a className={styles.a} href="/publicationContent/793000000001">
-                            <div className={styles.divGroup}>
-                                <div className={styles.leftDiv}>
+                            <div
+                                className={styles.container_feature_publicationsContent_a_divGroup}
+                            >
+                                <div
+                                    className={
+                                        styles.container_feature_publicationsContent_a_divGroup_leftDiv
+                                    }
+                                >
                                     <Image
                                         src={PublicationsProspectPNG}
                                         alt="即将到来"
@@ -282,10 +283,32 @@ const Home: NextPage<IProps> = () => {
                                         height={280}
                                     />
                                 </div>
-                                <div className={styles.rightDiv}>
-                                    <p className={styles.p}>2023/10/08</p>
-                                    <h2 className={styles.h2}>即将到来</h2>
-                                    <p className={styles.p}>茶灯全栈技术周刊 即将到来</p>
+                                <div
+                                    className={
+                                        styles.container_feature_publicationsContent_a_divGroup_rightDiv
+                                    }
+                                >
+                                    <p
+                                        className={
+                                            styles.container_feature_publicationsContent_a_divGroup_rightDiv_p
+                                        }
+                                    >
+                                        2023/10/08
+                                    </p>
+                                    <h2
+                                        className={
+                                            styles.container_feature_publicationsContent_a_divGroup_rightDiv_h2
+                                        }
+                                    >
+                                        即将到来
+                                    </h2>
+                                    <p
+                                        className={
+                                            styles.container_feature_publicationsContent_a_divGroup_rightDiv_p
+                                        }
+                                    >
+                                        茶灯全栈技术周刊 即将到来
+                                    </p>
                                 </div>
                             </div>
                         </a>
