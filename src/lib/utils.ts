@@ -1,7 +1,7 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from 'next/font/google';
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
