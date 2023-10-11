@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import clsx from 'clsx';
 
-import styles from './index.module.css';
+import styles from './page.module.css';
 
 export interface IFooterProps {
     title: string;

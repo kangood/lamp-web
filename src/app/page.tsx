@@ -12,7 +12,7 @@ import PublicationsProspectPNG from 'public/publications_prospect.png';
 
 import { montserrat } from '@/lib/utils';
 
-import styles from './index.module.css';
+import styles from './page.module.css';
 
 interface IProps {}
 

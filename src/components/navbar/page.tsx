@@ -4,7 +4,7 @@ import { Themes } from '@/constants/enum';
 
 import { ThemeContext } from '@/stores/theme';
 
-import styles from './index.module.css';
+import styles from './page.module.css';
 
 export interface INavBarProps {}
 

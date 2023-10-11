@@ -6,9 +6,9 @@ import PublicationsProspectPNG from 'public/publications_prospect.png';
 
 import clsx from 'clsx';
 
-import pagesStyles from '../index.module.css';
+import pagesStyles from '../page.module.css';
 
-import styles from './index.module.css';
+import styles from './page.module.css';
 
 const Prospect: NextPage = () => {
     return (
