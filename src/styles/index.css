@@ -1,3 +1,5 @@
+/* index.css 引入其他文件 */
+
 @import 'tailwindcss/base';
 @import './tailwind/base.css';
 @import 'tailwindcss/components';
@@ -5,3 +7,4 @@
 @import 'tailwindcss/utilities';
 @import './tailwind/utilities.css';
 @import './app.css';
+@import './vars.css';

@@ -1,54 +1,66 @@
+/* 基础层样式文件,一般用于覆盖一些tailwind（非浏览器）中默认的基础样式 */
+
 @layer base {
     html {
-        font-family: var(--font-family-base);
-        font-size: var(--font-size-base);
+        font-family: var(--font-family-standard);
+        color: var(--primary-color);
+        background-color: var(--primary-background-color);
     }
 }
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 222.2 84% 4.9%;
-        --muted: 210 40% 96.1%;
-        --muted-foreground: 215.4 16.3% 46.9%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 84% 4.9%;
-        --card: 0 0% 100%;
-        --card-foreground: 222.2 84% 4.9%;
-        --border: 214.3 31.8% 91.4%;
-        --input: 214.3 31.8% 91.4%;
-        --primary: 222.2 47.4% 11.2%;
-        --primary-foreground: 210 40% 98%;
-        --secondary: 210 40% 96.1%;
-        --secondary-foreground: 222.2 47.4% 11.2%;
-        --accent: 210 40% 96.1%;
-        --accent-foreground: 222.2 47.4% 11.2%;
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 210 40% 98%;
-        --ring: 215 20.2% 65.1%;
-        --radius: 0.5rem;
+        --primary-color: #333; /* 主要的字体颜色 */
+        --primary-background-color: rgba(255, 255, 255, 100%); /* 主要的背景色 */
+        --footer-background-color: #f4f5f5; /* footer组件的背景色 */
+        --navbar-background-color: rgba(255, 255, 255, 50%); /* navbar组件的背景色 */
+        --secondary-color: #666; /* 次一级，色值没那么显眼的字体颜色 */
+        --secondary-color-2: #f9f9f9;
+        --secondary-color-9: #f5f5f5;
+        --secondary-color-10: #03e4ae;
+        --secondary-color-11: #f4f5f5;
+        --secondary-color-12: #fff;
+        --secondary-font-color-4: #1c1f23;
+        --link-color: #0070f3; /* 链接 hover 上去的颜色 */
+        --button-color-2: #04e4ae; /* 按钮颜色 */
+        --navbar-icon: url('/logo_light.png');
+        --footer-icon: url('/logo_light_lucency.png');
+        --home-theme-icon: url('/theme_light.png');
+        --home-body-icon-clear-webp: url('/body_icon_light_clear.png');
+        --module-background: url('/module_background_light.png');
+        --arrow-right: url('/arrow_right_light.png');
+        --home-team-icon: url('/team_icon_light.png');
+        --home-nextjs_icon: url('/nextjs_logo.png');
+        --pagination-left-arrow: url('/pagination_left_arrow_light.png');
+        --pagination-right-arrow: url('/pagination_right_arrow_light.png');
+        --join-us-title-background: url('/join_us_title_bg_light.png');
     }
 
-    .dark {
-        --background: 222.2 84% 4.9%;
-        --foreground: 210 40% 98%;
-        --muted: 217.2 32.6% 17.5%;
-        --muted-foreground: 215 20.2% 65.1%;
-        --popover: 222.2 84% 4.9%;
-        --popover-foreground: 210 40% 98%;
-        --card: 222.2 84% 4.9%;
-        --card-foreground: 210 40% 98%;
-        --border: 217.2 32.6% 17.5%;
-        --input: 217.2 32.6% 17.5%;
-        --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 11.2%;
-        --secondary: 217.2 32.6% 17.5%;
-        --secondary-foreground: 210 40% 98%;
-        --accent: 217.2 32.6% 17.5%;
-        --accent-foreground: 210 40% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 85.7% 97.3%;
-        --ring: 217.2 32.6% 17.5%;
+    html[data-theme='dark'] {
+        --primary-color: #fff;
+        --primary-background-color: rgba(14, 14, 14, 100%);
+        --footer-background-color: #242424;
+        --navbar-background-color: rgba(0, 0, 0, 50%);
+        --secondary-color: rgba(255, 255, 255, 50%);
+        --secondary-color-2: #171717;
+        --secondary-color-9: #222229;
+        --secondary-color-10: #01ffc3;
+        --secondary-color-11: #171717;
+        --secondary-color-12: #1c1c1c;
+        --secondary-font-color-4: #999;
+        --link-color: #34a8eb;
+        --button-color-2: #01ffc3;
+        --navbar-icon: url('/logo_dark.png');
+        --footer-icon: url('/logo_dark_lucency.png');
+        --home-theme-icon: url('/theme_dark.png');
+        --home-body-icon-clear-webp: url('/body_icon_clear_dark.png');
+        --module-background: url('/module_background_dark.png');
+        --arrow-right: url('/arrow_right_dark.png');
+        --home-team-icon: url('/team_icon_dark.png');
+        --home-nextjs_icon: url('/nextjs_logo.png');
+        --pagination-left-arrow: url('/pagination_left_arrow_dark.png');
+        --pagination-right-arrow: url('/pagination_right_arrow_dark.png');
+        --join-us-title-background: url('/join_us_title_bg_dark.png');
     }
 }
 
@@ -57,7 +69,15 @@
         @apply border-border;
     }
 
-    body {
-        @apply bg-background text-foreground;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
     }
 }

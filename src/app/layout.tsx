@@ -6,9 +6,7 @@ import { INavBarProps, NavBar } from '@/components/navbar/page';
 import { Footer, IFooterProps } from '@/components/footer/page';
 import { ThemeContextProvider } from '@/stores/theme';
 
-// import '@/styles/index.css';
-
-import './global.scss';
+import '@/styles/index.css';
 
 import styles from './layout.module.css';
 
@@ -31,7 +29,7 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <ThemeContextProvider>
-                    <div className={styles.layout}>
+                    <div>
                         <NavBar {...navbarData} />
                         <div className={styles.divide} />
                         <main>{children}</main>

@@ -1,2 +1,4 @@
+/* 组件层样式,一般无特殊需求可以用react组件抽象而不是在这里定义css类 */
+
 @layer components {
 }

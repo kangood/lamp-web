@@ -1,7 +1,10 @@
+/* 存储css变量的文件 */
+
 :root {
-    --font-size-base: 0.875rem;
-    --font-family-standard: 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei', simsun,
-        helvetica, arial, sans-serif, monospace;
+    --font-family-standard: -apple-system, blinkmacsystemfont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     --font-family-firacode: 'Fira Code', 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei',
         simsun, helvetica, arial, sans-serif, monospace;
+    --font-family-other: 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei', simsun, helvetica,
+        arial, sans-serif, monospace;
 }

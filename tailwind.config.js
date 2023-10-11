@@ -12,6 +12,7 @@ module.exports = {
         container: {
             center: true,
             padding: '2rem',
+            // 各种尺寸的屏幕边界
             screens: {
                 xs: '480px',
                 sm: '576px',

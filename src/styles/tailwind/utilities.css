@@ -1,2 +1,4 @@
+/* 工具层样式,可以在这里添加一些tailwind中不存在的一些样式类 */
+
 @layer utilities {
 }
