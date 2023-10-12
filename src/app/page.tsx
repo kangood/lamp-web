@@ -147,7 +147,7 @@ const Home: NextPage<IProps> = () => {
                     </div>
                 </div>
                 {/* 技术产品 */}
-                <div className={styles.technologyProduct}>
+                <div id="technologyProduct" className={styles.technologyProduct}>
                     <h2 className={styles.title}>技术产品</h2>
                     <div className={styles.content}>
                         <a
@@ -257,7 +257,7 @@ const Home: NextPage<IProps> = () => {
                     </div>
                 </div>
                 {/* 期刊专栏，复用优势特点 */}
-                <div className={clsx(styles.feature)}>
+                <div id="feature" className={clsx(styles.feature)}>
                     <div className={styles.prospect}>
                         <div className={styles.headGroup}>
                             <h2>期刊专栏</h2>
@@ -269,7 +269,7 @@ const Home: NextPage<IProps> = () => {
                         </a>
                     </div>
                     <div className={styles.publicationsContent}>
-                        <a className={styles.a} href="/publicationContent/793000000001">
+                        <a className={styles.a} href="/publications">
                             <div
                                 className={styles.container_feature_publicationsContent_a_divGroup}
                             >

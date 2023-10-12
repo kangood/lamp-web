@@ -28,6 +28,10 @@ h3 {
     color: var(--secondary-color);
 }
 
+h4 {
+    font-weight: bold;
+}
+
 li,
 ul {
     /* 列表项标记的类型: 无标记 */

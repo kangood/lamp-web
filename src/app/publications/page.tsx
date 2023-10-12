@@ -23,7 +23,7 @@ const Prospect: NextPage = () => {
                 <div className={styles.middle}>
                     <a
                         className={styles.middle}
-                        href="/publicationContent/793000000001"
+                        href="/publications"
                         rel="noopener noreferrer"
                         target="_blank"
                     >

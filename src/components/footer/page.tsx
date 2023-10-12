@@ -23,14 +23,7 @@ export const Footer: FC<IFooterProps> = () => {
                 <div className={styles.right}>
                     <div className={styles.singleGroup}>
                         <div className={styles.div}>了解更多</div>
-                        <a
-                            className={clsx(styles.a, styles.opacity)}
-                            href="https://panlore.top"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            博客
-                        </a>
+                        <a className={styles.a}>博客</a>
                     </div>
                     <div className={styles.singleGroup}>
                         <div className={styles.div}>产品</div>

@@ -1,4 +1,4 @@
-.up {
+.top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,5 +22,124 @@
         line-height: 2.125rem;
         color: var(--primary-color);
         text-align: center;
+    }
+}
+
+.tabsTrigger {
+    @apply w-36 text-base;
+}
+
+.tabsContent {
+    width: 72rem;
+    margin: auto;
+
+    .up {
+        width: inherit;
+        margin: auto;
+
+        .inside {
+            width: 100%;
+            min-height: 15rem;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            background-color: var(--secondary-color-11);
+
+            .head {
+                padding: 1.5625rem 0;
+                border-bottom: 0.0625rem solid var(--secondary-color-16);
+
+                .h3 {
+                    position: relative;
+                    padding-left: 1.25rem;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    color: var(--primary-color);
+                }
+
+                .h3::after {
+                    position: absolute;
+                    top: 0.375rem;
+                    left: 0;
+                    width: 0.5rem;
+                    height: 1.375rem;
+                    content: '';
+                    background-color: var(--secondary-color-10);
+                }
+
+                .p {
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .content {
+                .h4 {
+                    margin: 1.5rem 0 0.75rem;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                }
+
+                .outward {
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    color: var(--secondary-color);
+                }
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 8.8125rem;
+                height: 3.375rem;
+                padding-left: 1.875rem;
+                margin-top: 1.5rem;
+                font-size: smaller;
+                color: var(--primary-color);
+                cursor: pointer;
+                background-color: inherit;
+                background-image: var(--arrow-right);
+                background-repeat: no-repeat;
+                background-position: 5.6875rem 1.25rem;
+                background-size: 1.25rem auto;
+                border: 0.0625rem solid var(--primary-color);
+                border-radius: 0.25rem;
+                opacity: 0.6;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .down {
+        display: flex;
+        justify-content: center;
+        width: inherit;
+        margin: 1.25rem 0 5rem;
+
+        .ul {
+            display: flex;
+            width: 6rem;
+            height: 2rem;
+            /* 列表项标记的类型: 无标记 */
+            list-style-type: none;
+
+            li {
+                @apply flex items-center justify-center w-8 h-8 cursor-pointer bg-inherit text-[var(--secondary-font-color-4)];
+            }
+
+            .li1 {
+                @apply cursor-not-allowed bg-no-repeat bg-center bg-contain bg-[image:var(--pagination-left-arrow)];
+            }
+
+            .li2 {
+                @apply cursor-not-allowed rounded-[0.1875rem] text-[var(--primary-color)] bg-[var(--secondary-color-9)];
+            }
+
+            .li3 {
+                @apply cursor-not-allowed bg-no-repeat bg-center bg-contain bg-[image:var(--pagination-right-arrow)];
+            }
+        }
     }
 }
