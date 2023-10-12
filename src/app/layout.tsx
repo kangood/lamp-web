@@ -1,7 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
-
 import { INavBarProps, NavBar } from '@/components/navbar/page';
 import { Footer, IFooterProps } from '@/components/footer/page';
 import { ThemeContextProvider } from '@/stores/theme';
@@ -9,11 +7,6 @@ import { ThemeContextProvider } from '@/stores/theme';
 import '@/styles/index.css';
 
 import styles from './layout.module.css';
-
-export const metadata: Metadata = {
-    title: '3rapp',
-    description: '3r教室TS全栈课程',
-};
 
 export interface ILayoutProps {
     navbarData: INavBarProps;
