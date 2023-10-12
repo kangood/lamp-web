@@ -52,7 +52,7 @@ const Prospect: NextPage = () => {
                                         <div className={styles.outward}>
                                             <div>
                                                 <p>
-                                                    负责抖音、抖音火山版、直播等业务大规模复杂业务场景的前端架构设计、实现和优化
+                                                    负责茶灯官网、茶灯后台等业务大规模复杂业务场景的前端架构设计、实现和优化
                                                 </p>
                                                 <p>
                                                     1、负责PC、H5、Hybrid、App
@@ -98,7 +98,7 @@ const Prospect: NextPage = () => {
                                                 </p>
                                                 <p>
                                                     4. 参与推进跨平台动态化方案在 IES
-                                                    及字节跳动各产品内落地
+                                                    及茶灯各产品内落地
                                                 </p>
                                                 <p>
                                                     5.
