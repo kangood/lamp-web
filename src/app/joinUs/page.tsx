@@ -86,7 +86,7 @@ const JoinUs = async () => {
                                                 </div>
                                             </div>
                                             <Dialog>
-                                                <DialogTrigger>
+                                                <DialogTrigger asChild>
                                                     <button className={styles.btn}>查看详情</button>
                                                 </DialogTrigger>
                                                 <DialogContent className="max-w-2xl z-[101]">
