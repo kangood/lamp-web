@@ -10,7 +10,7 @@ import pagesStyles from '../page.module.css';
 
 import styles from './page.module.css';
 
-const Prospect: NextPage = () => {
+const Publications: NextPage = () => {
     return (
         <>
             <div className={styles.outer}>
@@ -88,4 +88,4 @@ const Prospect: NextPage = () => {
     );
 };
 
-export default Prospect;
+export default Publications;

@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev -p 3010",
+        "dev": "next dev -p 3100",
         "build": "next build",
         "start": "next start",
         "lint": "pnpm lint:es && pnpm lint:style",
@@ -11,6 +11,8 @@
         "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/"
     },
     "dependencies": {
+        "@radix-ui/react-dialog": "^1.0.5",
+        "@radix-ui/react-popover": "^1.0.7",
         "@radix-ui/react-slot": "^1.0.2",
         "@radix-ui/react-tabs": "^1.0.4",
         "@types/node": "20.4.9",
@@ -19,7 +21,7 @@
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.0.0",
         "eslint-config-next": "13.4.13",
-        "lucide-react": "^0.265.0",
+        "lucide-react": "^0.263.1",
         "next": "13.4.13",
         "react": "18.2.0",
         "react-dom": "18.2.0",

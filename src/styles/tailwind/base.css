@@ -20,6 +20,7 @@
         --secondary-color-10: #03e4ae;
         --secondary-color-11: #f4f5f5;
         --secondary-color-12: #fff;
+        --secondary-color-16: #e0e0e0;
         --secondary-font-color-4: #1c1f23;
         --link-color: #0070f3; /* 链接 hover 上去的颜色 */
         --button-color-2: #04e4ae; /* 按钮颜色 */
@@ -47,6 +48,7 @@
         --secondary-color-10: #01ffc3;
         --secondary-color-11: #171717;
         --secondary-color-12: #1c1c1c;
+        --secondary-color-16: #373737;
         --secondary-font-color-4: #999;
         --link-color: #34a8eb;
         --button-color-2: #01ffc3;
