@@ -23,7 +23,7 @@ const Publications: NextPage = () => {
                 <div className={styles.middle}>
                     <a
                         className={styles.middle}
-                        href="/publications"
+                        href="/publicationContent/793000000001"
                         rel="noopener noreferrer"
                         target="_blank"
                     >

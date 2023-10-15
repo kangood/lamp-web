@@ -1,0 +1,3 @@
+.p {
+    @apply text-[var(--secondary-color)] text-base font-normal leading-8;
+}

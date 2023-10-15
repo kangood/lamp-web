@@ -34,7 +34,7 @@ export const NavBar: FC<INavBarProps> = () => {
     };
     return (
         <div className={styles.navBar}>
-            <a className={styles.link} href="https://lamp.panlore.top">
+            <a className={styles.link} href="/">
                 <div className={styles.logoImg} />
                 <p className={styles.text}>茶灯</p>
             </a>
