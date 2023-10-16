@@ -1,39 +1,13 @@
 /* 全局样式文件 */
 
-h1 {
-    margin: 0 0 0.625rem;
-    font-family: sans-serif;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 4.875rem;
-    color: var(--primary-color);
+.nextLogoBase {
+    @apply inline-flex items-center justify-center bg-[image:var(--home-nextjs-icon)] bg-no-repeat bg-contain border-solid border-[#ecedef] rounded-[50%];
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 2rem;
-    /* 标准字体样式，默认值 */
-    font-style: normal;
-    font-weight: 600;
-    line-height: 3.125rem;
-    /* 字符间距 */
-    letter-spacing: 0.0125rem;
+.nextLogoGirth {
+    @apply w-12 h-12 border-[0.1875rem];
 }
 
-h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2rem;
-    color: var(--secondary-color);
-}
-
-h4 {
-    font-weight: bold;
-}
-
-li,
-ul {
-    /* 列表项标记的类型: 无标记 */
-    list-style-type: none;
+.nextLogoSpan {
+    @apply nextLogoGirth inline-flex items-center justify-center w-12 h-12 bg-[image:var(--home-nextjs-icon)] bg-no-repeat bg-contain border-[0.3125rem] border-solid border-[#ecedef] rounded-[50%];
 }

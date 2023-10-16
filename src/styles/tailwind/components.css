@@ -46,4 +46,24 @@
         --destructive-foreground: 0 85.7% 97.3%;
         --ring: 217.2 32.6% 17.5%;
     }
+
+    .navbar_technologyProduct_hoverCard {
+        @apply hover:bg-[var(--secondary-color-9)] pl-4;
+
+        .outwardDiv {
+            @apply flex items-center cursor-pointer h-16;
+
+            .inwardDiv {
+                @apply flex flex-col items-start pl-2;
+
+                .p1 {
+                    @apply mb-1 text-sm leading-4 font-medium;
+                }
+
+                .p2 {
+                    @apply text-xs leading-[0.875rem] font-medium opacity-50;
+                }
+            }
+        }
+    }
 }

@@ -32,7 +32,7 @@
         --module-background: url('/module_background_light.png');
         --arrow-right: url('/arrow_right_light.png');
         --home-team-icon: url('/team_icon_light.png');
-        --home-nextjs_icon: url('/nextjs_logo.png');
+        --home-nextjs-icon: url('/nextjs_logo.png');
         --pagination-left-arrow: url('/pagination_left_arrow_light.png');
         --pagination-right-arrow: url('/pagination_right_arrow_light.png');
         --join-us-title-background: url('/join_us_title_bg_light.png');
@@ -61,7 +61,7 @@
         --module-background: url('/module_background_dark.png');
         --arrow-right: url('/arrow_right_dark.png');
         --home-team-icon: url('/team_icon_dark.png');
-        --home-nextjs_icon: url('/nextjs_logo.png');
+        --home-nextjs-icon: url('/nextjs_logo.png');
         --pagination-left-arrow: url('/pagination_left_arrow_dark.png');
         --pagination-right-arrow: url('/pagination_right_arrow_dark.png');
         --join-us-title-background: url('/join_us_title_bg_dark.png');
@@ -69,10 +69,6 @@
 }
 
 @layer base {
-    * {
-        @apply border-border;
-    }
-
     h1,
     h2,
     h3,
@@ -83,5 +79,43 @@
 
     a {
         text-decoration: none;
+    }
+
+    h1 {
+        margin: 0 0 0.625rem;
+        font-family: sans-serif;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 4.875rem;
+        color: var(--primary-color);
+    }
+
+    h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        /* 标准字体样式，默认值 */
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.125rem;
+        /* 字符间距 */
+        letter-spacing: 0.0125rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: var(--secondary-color);
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+
+    li,
+    ul {
+        /* 列表项标记的类型: 无标记 */
+        list-style-type: none;
     }
 }

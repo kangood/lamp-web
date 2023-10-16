@@ -106,14 +106,7 @@ const Home: NextPage<IProps> = () => {
                     </div>
                     <div className={styles.featureContent}>
                         <div className={styles.singleOuter}>
-                            <div
-                                // className={`${isHovered ? styles.hovered : ''} ${
-                                //     styles.singleMiddle
-                                // } `}
-                                className={styles.singleMiddle}
-                                // onMouseEnter={handleMouseEnter}
-                                // onMouseLeave={handleMouseLeave}
-                            >
+                            <div className={styles.singleMiddle}>
                                 <div className={styles.singleInner}>
                                     <h3 className={styles.h3}>快速开发</h3>
                                     <p className={styles.p}>
@@ -165,10 +158,8 @@ const Home: NextPage<IProps> = () => {
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <span className={styles.nextLogoSpan}>
-                                <div className={styles.nextLogoImg} />
-                            </span>
-                            <div className={styles.nextLogoAppend}>
+                            <span className="nextLogoSpan" />
+                            <div className="flex items-center justify-center w-24 h-12 ml-4">
                                 {/* 这个svg因为涉及到文字的颜色变换，要改填充颜色fill，在public目录下的svg文件无法识别，所以完整贴出来 */}
                                 <svg
                                     aria-label="Next.js logotype"
