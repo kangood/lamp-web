@@ -25,8 +25,10 @@ const Home: NextPage<IProps> = () => {
                 {/* 简介 */}
                 <div className={styles.intro}>
                     <div className={styles.textGroup}>
-                        <h1 className={styles.title}>茶灯</h1>
-                        <p className={styles.text}>专注于多租户解决方案的中后台快速开发平台</p>
+                        <h1 className={styles.title}>茶灯技术团队</h1>
+                        <p className={styles.text}>
+                            我们是茶灯技术团队，服务于茶灯及旗下多个产品线，专注于建设前端基础设施，积极探索社区技术。
+                        </p>
                     </div>
                     <div className={styles.bodyIcon} />
                 </div>
@@ -104,7 +106,14 @@ const Home: NextPage<IProps> = () => {
                     </div>
                     <div className={styles.featureContent}>
                         <div className={styles.singleOuter}>
-                            <div className={styles.singleMiddle}>
+                            <div
+                                // className={`${isHovered ? styles.hovered : ''} ${
+                                //     styles.singleMiddle
+                                // } `}
+                                className={styles.singleMiddle}
+                                // onMouseEnter={handleMouseEnter}
+                                // onMouseLeave={handleMouseLeave}
+                            >
                                 <div className={styles.singleInner}>
                                     <h3 className={styles.h3}>快速开发</h3>
                                     <p className={styles.p}>
@@ -279,6 +288,9 @@ const Home: NextPage<IProps> = () => {
                                     }
                                 >
                                     <Image
+                                        className={
+                                            styles.container_feature_publicationsContent_a_divGroup_leftDiv_Img
+                                        }
                                         src={PublicationsProspectPNG}
                                         alt="即将到来"
                                         width={560}

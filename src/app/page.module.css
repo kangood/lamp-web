@@ -16,7 +16,7 @@
             width: 29.625rem;
 
             .title {
-                /* animation:  */
+                animation: abc 1.3s;
             }
 
             .text {
@@ -25,12 +25,11 @@
                 font-size: 1.125rem;
                 line-height: 2rem;
                 color: var(--primary-color);
-                /* animation:  */
+                animation: bcd 1.3s;
             }
         }
 
         .bodyIcon {
-            /* animation:  */
             width: 38.9375rem;
             height: 34.625rem;
             background-image: var(--home-body-icon-clear-webp);
@@ -39,6 +38,7 @@
             /* 设置背景图像的起始位置 */
             background-position: 50%;
             background-size: 38.9375rem 34.625rem;
+            animation: cde 1.3s;
         }
     }
 
@@ -50,13 +50,13 @@
         width: 100%;
 
         .yGroup {
-            /* animation */
             display: flex;
             /* 列，垂直显示 */
             flex-direction: column;
             align-items: center;
             width: 12.5rem;
             margin-bottom: 2.375rem;
+            animation: def 1.3s;
 
             .img {
                 margin-bottom: 1rem;
@@ -148,7 +148,14 @@
                     background-position: 50%;
                     background-size: 20.625rem 25rem;
                     border-radius: 1rem;
-                    transition: margin-top 0.5s;
+                    /* 动画 */
+                    transition-delay: 0s; /* 定义transition延迟执行的时间 */
+                    transition-timing-function: linear; /* 指定transition效果的转速曲线 */
+                    transition-duration: 0.3s; /* transition效果需要指定多少秒或毫秒才能完成 */
+                    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+                    transition-property: transform; /* 指定CSS属性的name，transition效果 */
+                    /* 动画简写 */
+                    /* transition: transform 0.3s linear; */
 
                     .singleInner {
                         display: flex;
@@ -181,6 +188,11 @@
                             opacity: 0.65;
                         }
                     }
+                }
+
+                .singleMiddle:hover {
+                    /* 悬停转变 */
+                    transform: translate3d(0, -0.5rem, 0);
                 }
             }
         }
@@ -350,6 +362,18 @@
     cursor: pointer;
 }
 
+.container_feature_publicationsContent_a_divGroup:hover {
+    background-color: var(--secondary-color-11);
+
+    .container_feature_publicationsContent_a_divGroup_rightDiv_h2 {
+        color: var(--secondary-font-color-3);
+    }
+
+    .container_feature_publicationsContent_a_divGroup_leftDiv_Img {
+        transform: scale(1.15);
+    }
+}
+
 .container_feature_publicationsContent_a_divGroup_leftDiv {
     display: flex;
     align-items: center;
@@ -358,6 +382,10 @@
     height: 17.5rem;
     margin-right: 5rem;
     overflow: hidden;
+}
+
+.container_feature_publicationsContent_a_divGroup_leftDiv_Img {
+    transition: transform 0.5s;
 }
 
 .container_feature_publicationsContent_a_divGroup_rightDiv {
@@ -382,4 +410,88 @@
     font-size: 1rem;
     line-height: 2rem;
     color: var(--secondary-color);
+}
+/* ====================动画效果==================== */
+@keyframes abc {
+    0% {
+        opacity: 0;
+        /* translate3d：3d转换，x、y、z轴 */
+        transform: translate3d(0, 3.125rem, 0);
+    }
+
+    38% {
+        opacity: 0;
+        transform: translate3d(0, 3.125rem, 0);
+    }
+
+    84% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes bcd {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 3.125rem, 0);
+    }
+
+    53% {
+        opacity: 0;
+        transform: translate3d(0, 3.125rem, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes cde {
+    0% {
+        opacity: 0;
+        /* 缩放比例 */
+        transform: scale(0.8);
+    }
+
+    38% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes def {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 2.5rem, 0);
+    }
+
+    53% {
+        opacity: 0;
+        transform: translate3d(0, 2.5rem, 0);
+    }
+
+    77% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes efg {
+    0% {
+        transform: translate3d(0, -0.5rem, 0);
+    }
+
+    53% {
+        transform: translate3d(0, -0.5rem, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -0.5rem, 0);
+    }
 }

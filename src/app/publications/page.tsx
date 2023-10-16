@@ -40,6 +40,9 @@ const Publications: NextPage = () => {
                                 )}
                             >
                                 <Image
+                                    className={
+                                        pagesStyles.container_feature_publicationsContent_a_divGroup_leftDiv_Img
+                                    }
                                     src={PublicationsProspectPNG}
                                     alt="即将到来"
                                     width={400}

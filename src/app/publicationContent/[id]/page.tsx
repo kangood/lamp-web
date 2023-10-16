@@ -17,7 +17,6 @@ type Params = {
 
 const PublicationContent = ({ params: { id } }: Params) => {
     const publicationContentData = getPublicationContentData(id);
-    console.log('1', id, publicationContentData);
     if (!publicationContentData) {
         return notFound();
     }
