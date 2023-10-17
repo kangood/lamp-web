@@ -1,3 +1,5 @@
+'use client';
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import {
@@ -26,10 +28,10 @@ interface IProps {
     bonusPointList?: string[];
 }
 
-const JoinUs = async () => {
-    const data = await getData();
+const JoinUs = () => {
+    const data = getData();
     return (
-        <>
+        <div>
             <div className={styles.top}>
                 <h1 className={styles.h1}>在招岗位</h1>
                 <p className={styles.p}>工程化、跨平台、可视化搭建、国际化、安全工程等人才招募</p>
@@ -192,11 +194,11 @@ const JoinUs = async () => {
                     })}
                 </Tabs>
             </div>
-        </>
+        </div>
     );
 };
 
-const getData = async (): Promise<IProps[]> => {
+const getData = (): IProps[] => {
     return [
         {
             tabName: 'eden',

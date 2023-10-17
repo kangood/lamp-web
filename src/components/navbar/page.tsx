@@ -128,14 +128,14 @@ export const NavBar: FC<INavBarProps> = () => {
                         </button>
                     </div>
                     <div className={styles.textSingle}>
-                        <a
-                            className={styles.text}
-                            href="/joinUs"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            加入我们
-                        </a>
+                        <HoverCard openDelay={0}>
+                            <HoverCardTrigger className={styles.text}>加入我们</HoverCardTrigger>
+                            <HoverCardContent className="w-28 p-2 hover:bg-[var(--secondary-color-9)]">
+                                <a className="text-sm font-medium" href="/joinUs">
+                                    在招岗位
+                                </a>
+                            </HoverCardContent>
+                        </HoverCard>
                     </div>
                 </div>
                 <div className={styles.themeSwitch} onClick={themeSwitchClickHandle} />
