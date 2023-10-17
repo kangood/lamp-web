@@ -6,7 +6,7 @@ module.exports = {
     },
     plugins: ['prettier', 'import', 'unused-imports'],
     extends: [
-        'turbo',
+        // 'turbo', process.env报错，就去掉了
         // 使用prettier格式化代码
         // https://github.com/prettier/eslint-config-prettier#readme
         'prettier',

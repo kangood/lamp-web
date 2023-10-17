@@ -28,13 +28,6 @@ export const NavBar: FC<INavBarProps> = () => {
             setTheme(Themes.light);
         }
     };
-    // 滚动到期刊专栏
-    const toLocationFeature = () => {
-        const dom = document.getElementById('feature');
-        if (dom) {
-            dom.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
     return (
         <div className={styles.navBar}>
             <a className={styles.link} href="/">
@@ -46,7 +39,7 @@ export const NavBar: FC<INavBarProps> = () => {
                     <div className={styles.textSingle}>
                         <a
                             className={styles.text}
-                            href="https://lamp.panlore.top"
+                            href={process.env.ADMIN_URL}
                             rel="noopener noreferrer"
                             target="_blank"
                         >
