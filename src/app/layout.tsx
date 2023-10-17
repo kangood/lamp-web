@@ -6,8 +6,6 @@ import { ThemeContextProvider } from '@/stores/theme';
 
 import '@/styles/index.css';
 
-import styles from './layout.module.css';
-
 export interface ILayoutProps {
     navbarData: INavBarProps;
     footerData: IFooterProps;
@@ -24,7 +22,7 @@ export default function RootLayout({
                 <ThemeContextProvider>
                     <div>
                         <NavBar {...navbarData} />
-                        <div className={styles.divide} />
+                        <div className="w-[100%] h-16" />
                         <main>{children}</main>
                         <Footer {...footerData} />
                     </div>

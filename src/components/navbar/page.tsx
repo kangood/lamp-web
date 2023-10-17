@@ -59,79 +59,124 @@ export const NavBar: FC<INavBarProps> = () => {
                             <HoverCardContent>
                                 <ul>
                                     <li className="navbar_technologyProduct_hoverCard">
-                                        <div className="outwardDiv">
-                                            <span
-                                                className={clsx(
-                                                    'nextLogoBase',
-                                                    'w-8 h-8 border-[0.125rem]',
-                                                )}
-                                            />
-                                            <div className="inwardDiv">
-                                                <p className="p1">Next.JS</p>
-                                                <p className="p2">新一代全栈 Web 应用程序</p>
+                                        <a
+                                            href="https://nextjs.org"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                        >
+                                            <div className="outwardDiv">
+                                                <span
+                                                    className={clsx(
+                                                        'nextLogoBase',
+                                                        'w-8 h-8 border-[0.125rem]',
+                                                    )}
+                                                />
+                                                <div className="inwardDiv">
+                                                    <p className="p1">Next.JS</p>
+                                                    <p className="p2">新一代全栈 Web 应用程序</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </li>
                                     <li className="navbar_technologyProduct_hoverCard">
-                                        <div className="outwardDiv">
-                                            <div>
+                                        <a
+                                            href="https://ant.design"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                        >
+                                            <div className="outwardDiv">
+                                                <div>
+                                                    <Image
+                                                        src={AntDesignLogoSVG}
+                                                        alt="AntDesignLogoSVG"
+                                                        width={32}
+                                                        height={32}
+                                                    />
+                                                </div>
+                                                <div className="inwardDiv">
+                                                    <p className="p1">Ant Design</p>
+                                                    <p className="p2">
+                                                        中后台企业级 React UI 组件库
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li className="navbar_technologyProduct_hoverCard">
+                                        <a
+                                            href="https://nestjs.com"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                        >
+                                            <div className="outwardDiv">
                                                 <Image
-                                                    src={AntDesignLogoSVG}
-                                                    alt="AntDesignLogoSVG"
+                                                    src={NestJSLogoSVG}
+                                                    alt="NestJSLogoSVG"
                                                     width={32}
                                                     height={32}
                                                 />
+                                                <div className="inwardDiv">
+                                                    <p className="p1">NestJS</p>
+                                                    <p className="p2">
+                                                        服务器端 Web 应用的开发框架
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div className="inwardDiv">
-                                                <p className="p1">Ant Design</p>
-                                                <p className="p2">中后台企业级 React UI 组件库</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </li>
                                     <li className="navbar_technologyProduct_hoverCard">
-                                        <div className="outwardDiv">
-                                            <Image
-                                                src={NestJSLogoSVG}
-                                                alt="NestJSLogoSVG"
-                                                width={32}
-                                                height={32}
-                                            />
-                                            <div className="inwardDiv">
-                                                <p className="p1">NestJS</p>
-                                                <p className="p2">服务器端 Web 应用的开发框架</p>
+                                        <a
+                                            href="https://tailwindcss.com"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                        >
+                                            <div className="outwardDiv">
+                                                <svg viewBox="0 0 50 31" className="w-auto h-5">
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        clipRule="evenodd"
+                                                        d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
+                                                        fill="#38bdf8"
+                                                    />
+                                                </svg>
+                                                <div className="inwardDiv">
+                                                    <p className="p1">TailwindCSS</p>
+                                                    <p className="p2">
+                                                        功能类优先的原子化 CSS 框架
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li className="navbar_technologyProduct_hoverCard">
-                                        <div className="outwardDiv">
-                                            <svg viewBox="0 0 50 31" className="w-auto h-5">
-                                                <path
-                                                    fillRule="evenodd"
-                                                    clipRule="evenodd"
-                                                    d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
-                                                    fill="#38bdf8"
-                                                />
-                                            </svg>
-                                            <div className="inwardDiv">
-                                                <p className="p1">TailwindCSS</p>
-                                                <p className="p2">功能类优先的原子化 CSS 框架</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </li>
                                 </ul>
                             </HoverCardContent>
                         </HoverCard>
                     </div>
                     <div className={styles.textSingle}>
-                        <button className={styles.text} onClick={toLocationFeature}>
-                            技术分享
-                        </button>
+                        <HoverCard openDelay={0}>
+                            <HoverCardTrigger className={styles.text}>技术分享</HoverCardTrigger>
+                            <HoverCardContent className="w-28 p-2 hover:bg-[var(--secondary-color-9)]">
+                                <a
+                                    className="text-sm font-medium"
+                                    href="https://panlore.top"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    技术博客
+                                </a>
+                            </HoverCardContent>
+                        </HoverCard>
                     </div>
                     <div className={styles.textSingle}>
                         <HoverCard openDelay={0}>
                             <HoverCardTrigger className={styles.text}>加入我们</HoverCardTrigger>
                             <HoverCardContent className="w-28 p-2 hover:bg-[var(--secondary-color-9)]">
-                                <a className="text-sm font-medium" href="/joinUs">
+                                <a
+                                    className="text-sm font-medium"
+                                    href="/joinUs"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
                                     在招岗位
                                 </a>
                             </HoverCardContent>

@@ -269,7 +269,12 @@ const Home: NextPage<IProps> = () => {
                         </a>
                     </div>
                     <div className={styles.publicationsContent}>
-                        <a className={styles.a} href="/publicationContent/793000000001">
+                        <a
+                            className={styles.a}
+                            href="/publicationContent/793000000001"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
                             <div
                                 className={styles.container_feature_publicationsContent_a_divGroup}
                             >
