@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "next dev -p 3100",
         "build": "next build",
-        "start": "next start",
+        "start": "next start -p 3100",
         "lint": "pnpm lint:es && pnpm lint:style",
         "lint:es": "next lint --fix",
         "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/"
