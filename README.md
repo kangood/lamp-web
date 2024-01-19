@@ -32,18 +32,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-#### 手动记录commitlint
-```
-types: [
-      {value: 'feat',     name: 'feat:     新功能'},
-      {value: 'fix',      name: 'fix:      修复'},
-      {value: 'docs',     name: 'docs:     文档变更'},
-      {value: 'style',    name: 'style:    代码格式(不影响代码运行的变动)'},
-      {value: 'refactor', name: 'refactor: 重构(既不是增加feature，也不是修复bug)'},
-      {value: 'perf',     name: 'perf:     性能优化'},
-      {value: 'test',     name: 'test:     增加测试'},
-      {value: 'chore',    name: 'chore:    构建过程或辅助工具的变动'},
-      {value: 'revert',   name: 'revert:   回退'},
-      {value: 'build',    name: 'build:    打包'}
-],
